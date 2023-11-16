@@ -1,0 +1,90 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x3471d
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          36847664 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         5
+  Size of section headers:           40 (bytes)
+  Number of section headers:         46
+  Section header string table index: 45
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] rom_start         PROGBITS        00027000 0000e0 000100 00 WAX  0   0  4
+  [ 2] text              PROGBITS        00027100 0001e0 069eec 00  AX  0   0 16
+  [ 3] .ARM.exidx        ARM_EXIDX       00090fec 06a0cc 000008 00  AL  2   0  4
+  [ 4] initlevel         PROGBITS        00090ff4 06a0d4 000118 00   A  0   0  4
+  [ 5] devices           PROGBITS        0009110c 06a1ec 000168 00   A  0   0  4
+  [ 6] device_handles    PROGBITS        00091274 06a354 000066 00   A  0   0  2
+  [ 7] ctors             PROGBITS        000912da 06a3ba 00000e 00  WA  0   0  1
+  [ 8] init_array        PROGBITS        000912e8 075008 000000 00   W  0   0  1
+  [ 9] log_const_se[...] PROGBITS        000912e8 06a3c8 0001b8 00   A  0   0  4
+  [10] shell_area        PROGBITS        000914a0 06a580 00002c 00   A  0   0  4
+  [11] shell_root_c[...] PROGBITS        000914cc 06a5ac 00003c 00   A  0   0  4
+  [12] shell_subcmd[...] PROGBITS        00091508 06a5e8 000014 00   A  0   0  4
+  [13] shell_dynami[...] PROGBITS        0009151c 06a5fc 000018 00   A  0   0  4
+  [14] rodata            PROGBITS        00091540 06a620 009e84 00   A  0   0 16
+  [15] .ramfunc          PROGBITS        20000000 075008 000000 00   W  0   0  1
+  [16] datas             PROGBITS        20000000 0744a8 0006a4 00  WA  0   0  8
+  [17] sw_isr_table      PROGBITS        200006a4 074b4c 000180 00  WA  0   0  4
+  [18] device_states     PROGBITS        20000824 074ccc 00001e 00  WA  0   0  1
+  [19] k_timer_area      PROGBITS        20000848 074cf0 000038 00  WA  0   0  8
+  [20] k_mem_slab_area   PROGBITS        20000880 074d28 000060 00  WA  0   0  4
+  [21] k_mutex_area      PROGBITS        200008e0 074d88 0000b4 00  WA  0   0  4
+  [22] k_sem_area        PROGBITS        20000994 074e3c 000018 00  WA  0   0  4
+  [23] k_queue_area      PROGBITS        200009ac 074e54 000054 00  WA  0   0  4
+  [24] _net_buf_poo[...] PROGBITS        20000a00 074ea8 000060 00  WA  0   0  4
+  [25] net_if_area       PROGBITS        20000a60 074f08 000008 00  WA  0   0  4
+  [26] net_if_dev_area   PROGBITS        20000a68 074f10 00001c 00  WA  0   0  4
+  [27] net_l2_area       PROGBITS        20000a84 074f2c 000010 00   A  0   0  4
+  [28] usb_descriptor    PROGBITS        20000a94 074f3c 0000a3 00  WA  0   0  1
+  [29] usb_cfg_data_area PROGBITS        20000b38 074fe0 000024 00  WA  0   0  4
+  [30] bss               NOBITS          20000b80 075040 01209a 00  WA  0   0 64
+  [31] noinit            NOBITS          20012c40 075040 008038 00  WA  0   0 64
+  [32] .comment          PROGBITS        00000000 075008 000040 01  MS  0   0  1
+  [33] .debug_aranges    PROGBITS        00000000 075048 00dda0 00      0   0  8
+  [34] .debug_info       PROGBITS        00000000 082de8 1d19170 00      0   0  1
+  [35] .debug_abbrev     PROGBITS        00000000 1d9bf58 0c026e 00      0   0  1
+  [36] .debug_line       PROGBITS        00000000 1e5c1c6 19e4c7 00      0   0  1
+  [37] .debug_frame      PROGBITS        00000000 1ffa690 028580 00      0   0  4
+  [38] .debug_str        PROGBITS        00000000 2022c10 0c5263 01  MS  0   0  1
+  [39] .debug_loc        PROGBITS        00000000 20e7e73 1833a1 00      0   0  1
+  [40] .debug_ranges     PROGBITS        00000000 226b218 0343b0 00      0   0  8
+  [41] .ARM.attributes   ARM_ATTRIBUTES  00000000 229f5c8 00002e 00      0   0  1
+  [42] .last_section     PROGBITS        0009bf20 075004 000004 00   A  0   0  1
+  [43] .symtab           SYMTAB          00000000 229f5f8 044150 10     44 11668  4
+  [44] .strtab           STRTAB          00000000 22e3748 0406aa 00      0   0  1
+  [45] .shstrtab         STRTAB          00000000 2323df2 00023b 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x06a0cc 0x00090fec 0x00090fec 0x00008 0x00008 R   0x4
+  LOAD           0x0000e0 0x00027000 0x00027000 0x743c4 0x743c4 RWE 0x10
+  LOAD           0x0744a8 0x20000000 0x0009b3c4 0x00b5c 0x00b5c RW  0x8
+  LOAD           0x075004 0x0009bf20 0x0009bf20 0x00004 0x00004 R   0x1
+  LOAD           0x000000 0x20000b80 0x20000b80 0x00000 0x1a0f8 RW  0x40
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     rom_start text .ARM.exidx initlevel devices device_handles ctors log_const_sections shell_area shell_root_cmds_sections shell_subcmds_sections shell_dynamic_subcmds_sections rodata 
+   02     datas sw_isr_table device_states k_timer_area k_mem_slab_area k_mutex_area k_sem_area k_queue_area _net_buf_pool_area net_if_area net_if_dev_area net_l2_area usb_descriptor usb_cfg_data_area 
+   03     .last_section 
+   04     bss noinit 

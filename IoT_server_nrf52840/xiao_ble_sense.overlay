@@ -1,0 +1,22 @@
+
+ / {
+
+	chosen {
+		zephyr,entropy = &rng;
+	};
+
+ 
+     buttons {
+		compatible = "gpio-keys";
+		button0: button_0 {
+			gpios = <&gpio0 3 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "Push button expansion board Seeed D1";
+		};
+	};
+  
+     /* These aliases are provided for compatibility with samples */
+     aliases {
+         sw0 = &button0;
+     };
+ };
+  
